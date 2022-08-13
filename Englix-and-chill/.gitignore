@@ -4,6 +4,10 @@ node_modules
 # testing
 coverage/
 
+#parcel
+.parcel-cache
+dist/
+
 # misc
 .DS_Store
 .env

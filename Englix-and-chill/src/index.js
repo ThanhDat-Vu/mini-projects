@@ -1,10 +1,6 @@
-function Transcript(props) {
-  return React.createElement('div', {}, [
-    React.createElement('span', {}, props.subcategory),
-    React.createElement('span', {}, props.index),
-    React.createElement('h3', {}, props.title),
-  ]);
-}
+import React from 'react';
+import { createRoot } from 'react-dom';
+import Transcript from './Transcript';
 
 function App() {
   return React.createElement('h1', {}, [
@@ -26,5 +22,5 @@ function App() {
   ]);
 }
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = createRoot(document.getElementById('root'));
 root.render(React.createElement(App));
